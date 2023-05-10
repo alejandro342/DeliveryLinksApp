@@ -1,0 +1,200 @@
+<resources>
+    <string name="app_name">DeliveryLinks</string>
+    <!--Text general-->
+    <string name="txt_default_name_general">----------</string>
+    <string name="txt_price_general">$ 00.00</string>
+    <string name="txt_quantity_general">0</string>
+    <string name="txt_total_general">Total</string>
+    <string name="btn_accept_general">Aceptar</string>
+    <string name="btn_continue_general">Continuar</string>
+    <string name="txt_direction">Dirección</string>
+    <string name="txt_client_general">Cliente :</string>
+    <string name="txt_default_phone_general">##########</string>
+
+    <!--Text Login-->
+    <string name="login_login">Login</string>
+    <string name="login_description">Ingrese con su correo y contraseña</string>
+    <string name="login_hin_email">Correo</string>
+    <string name="login_hin_password">Contraseña</string>
+    <string name="login_register">Registrate aquí</string>
+    <string name="login_accept">Aceptar</string>
+
+    <!--text Register User-->
+    <string name="register_user">Registro</string>
+    <string name="register_description">Completa los siguientes datos.</string>
+    <string name="register_hin_name_user">Nombre</string>
+    <string name="register_hin_lastname_user">Apellido</string>
+    <string name="register_hin_number_phone_user">Teléfono</string>
+    <string name="register_hin_password">Contraseña</string>
+    <string name="register_hin_repeat_password_user">Repetir contraseña</string>
+    <string name="register_save">Guardar</string>
+    <string name="register_back_login">Regresar a login</string>
+
+    <!--text Toast register-->
+    <string name="txt_name_void_register_user">Campo nombre vacío</string>
+    <string name="txt_lastname_void_register_user">Campo apellido vacío</string>
+    <string name="txt_email_void_register_user">Campo correo vacío</string>
+    <string name="txt_email_valid_void_register_user">Correo no válido</string>
+    <string name="txt_phone_void_register_user">Campo teléfono vacío</string>
+    <string name="txt_notValid_phone">Número de teléfono debe tener mínimo 10 caracteres</string>
+    <string name="txt_password_void_register_user">Campo contraseña vacío</string>
+    <string name="txt_repeat_password_void_register_user">Campo repetir contraseña vacío</string>
+    <string name="txt_repeat_password_validate">Campo contraseña y repetir contraseña no son iguales</string>
+    <string name="txt_length_password">La contraseña debe tener mínimo 8 caracteres </string>
+
+    <!-- text Update Profile -->
+    <string name="txt_created_user_dialog">Usuario creado correctamente</string>
+
+    <!--text Roles-->
+    <string name="txt_roles_default">ROL</string>
+
+    <!--text Select Image-->
+    <string name="txt_complete_information">COMPLETA TU INFORMACIÓN</string>
+    <string name="txt_save_info">CONFIRMAR</string>
+    <string name="txt_jump_info">Saltar paso</string>
+
+    <!--text Toast general-->
+    <string name="txt_There_was_an_error">Se produjo un error</string>
+
+    <!--text Home Client-->
+    <string name="txt_home_client_Home">Home</string>
+    <string name="txt_home_client_orders">Órdenes</string>
+    <string name="txt_home_client_profile">Perfil</string>
+
+    <!--text Home Restaurant-->
+    <string name="txt_home_restaurant_Home">Home</string>
+    <string name="txt_home_restaurant_category">Categorías</string>
+    <string name="txt_home_restaurant_products">Productos</string>
+    <string name="txt_home_restaurant_profile">Perfil</string>
+
+    <!--text Home Delivery-->
+    <string name="txt_home_delivery_orders">Órdenes</string>
+    <string name="txt_home_delivery_profile">Perfil</string>
+
+    <!-- text Fragment Profile -->
+    <string name="txt_profile_select_roll">SELECCIONAR ROL</string>
+    <string name="txt_profile_edit">EDITAR PERFIL</string>
+    <string name="txt_close_session">Cerrar sesión</string>
+
+    <!-- text Update Profile -->
+    <string name="btn_Cancel_update">Cancelar</string>
+    <string name="txt_Update_Data_Correct">Datos actualizados correctamente</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- text Update Profile -->
+    <string name="txt_close_session_dialog">¿Desea cerrar su sesión?</string>
+    <string name="btn_close_session_dialog">Aceptar</string>
+    <string name="btn_cancel_session_dialog">Cancelar</string>
+
+    <!-- text Update Information -->
+    <string name="txt_updated_information">Información actualizada</string>
+
+    <!--text Register Category-->
+    <string name="txt_hin_register_category">Nombre de la categoría</string>
+    <!--text Dialog Product-->
+    <string name="txt_Dialog_Category_Register">Categoría creada correctamente</string>
+
+    <!--text Register Product-->
+    <string name="register_hin_name_product">Nombre del producto</string>
+    <string name="register_hin_description_product">Descripción del producto</string>
+    <string name="register_hin_price_product">Precio del producto</string>
+
+    <!--text Dialog Product-->
+    <string name="txt_Dialog_Product_Register">Producto creado correctamente</string>
+
+    <!--text View Product-->
+    <string name="txt_product_name">Nombre :</string>
+    <string name="txt_product_price">Precio :</string>
+    <string name="txt_product_default_name">Name</string>
+    <string name="txt_product_default_price">00.00</string>
+
+    <!--text View Product-->
+    <string name="txt_product_name_default_detail">Nombre :</string>
+    <string name="txt_product_description_product_detail">DESCRIPCIÓN</string>
+    <string name="txt_product_description_de">is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</string>
+    <string name="txt_product_count_product_detail">1</string>
+    <string name="txt_product_price_detail">00.00</string>
+    <string name="btn_add_product_detail">Agregar producto</string>
+    <string name="btn_edit_product_detail">Editar producto</string>
+
+    <!--text View shopping bag-->
+    <string name="txt_name_product_shopping">Nombre del producto</string>
+
+    <!--text View Address-->
+    <string name="txt_address_client">Elige dónde recibir tu compra.</string>
+    <string name="txt_hin_address_client">Dirección</string>
+    <string name="txt_hin_colony_client">Colonia</string>
+    <string name="txt_hin_point_client">Punto de referencia</string>
+    <string name="btn_save_address_client">Crear dirección</string>
+
+    <!--google maps-->
+    <string name="google_map_api_key">Aqui-tu-Key-para-usar-el-mapa</string>
+
+    <!--text create address-->
+    <string name="txt_toast_address_void">Ingrese dirección</string>
+    <string name="txt_toast_colonia_void">Ingrese colonia</string>
+    <string name="txt_toast_lat_void">Seleccione el punto de referencia</string>
+    <string name="txt_toast_long_void">Seleccione el punto de referencia</string>
+
+    <!--text List address-->
+    <string name="txt_direction_neighborhood">Colonia</string>
+
+    <!--text List orders-->
+    <string name="txt_date_order">Fecha de pedido :</string>
+    <string name="txt_default_date_order">00/00/0000</string>
+    <string name="txt_deliver_order">Entregar en :</string>
+
+    <!--text List orders detail product-->
+    <string name="txt_quantity_product_detail">Cantidad :</string>
+    <string name="txt_client_product_detail">Cliente :</string>
+    <string name="txt_deliver_product_detail">Entregar en :</string>
+    <string name="txt_address_product_detail">Fecha de pedido :</string>
+    <string name="txt_current_status_product_detail">Estado actual :</string>
+    <string name="txt_delivery_product_detail">Repartidor :</string>
+
+    <!--text List orders detail product Restaurant-->
+    <string name="btn_accept_delivery">Asignar repartidor</string>
+    <string name="txt_delivery_available">Repartidores disponibles</string>
+
+    <!--text List orders detail product Delivery-->
+    <string name="btn_start_delivery">Iniciar entrega</string>
+    <string name="btn_go_to_map">Volver al mapa</string>
+
+    <!--text information client in map the Delivery-->
+    <string name="txt_information_client_delivery">Información del cliente</string>
+    <string name="txt_colony_client_delivery">Colonia</string>
+    <string name="txt_direction_client_delivery">Dirección</string>
+    <string name="txt_name_client_delivery">Nombre del cliente</string>
+    <string name="txt_phone_client_delivery">Teléfono del cliente</string>
+    <string name="txt_call_client_delivery">Llamar</string>
+    <string name="btn_deliver_order_client">Entregar pedido</string>
+
+    <!--text information delivery in map the client-->
+    <string name="txt_information_delivery_client">Información del repartidor</string>
+    <string name="txt_colony_delivery_client">Colonia</string>
+    <string name="txt_direction_delivery_client">Dirección</string>
+    <string name="txt_name_delivery_client">Nombre del repartidor</string>
+    <string name="txt_phone_delivery_client">Teléfono del repartidor</string>
+    <string name="txt_call_delivery_client">Llamar</string>
+    <string name="btn_client_order">Rastrear pedido</string>
+
+    <!--text information card client-->
+    <string name="txt_many_installments">¿En cuántas cuotas?</string>
+    <string name="txt_total_pay">Total a pagar</string>
+    <string name="btn_confirm_pay_installments">Confirmar pago</string>
+
+    <!--text information payments Activity-->
+    <string name="txt_no_successful_response">No hubo una respuesta exitosa</string>
+    <string name="txt_select_number_installments">Debe seleccionar el número de cuotas</string>
+
+    <!--text information payments Status-->
+    <string name="txt_thanks_for_your_buys">Gracias por su compra.</string>
+    <string name="txt_status_for_your_buys">Estado de la compra.</string>
+    <string name="btn_finish_buy">FINALIZAR</string>
+
+    <!--integrar notifiacaciones push-->
+    <string name="default_notification_channel_id">fcm_default_chanel</string>
+
+</resources>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    android:layout_margin="10dp"
+    android:orientation="horizontal"
+    app:cardCornerRadius="10dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/img_Item_Product_Shopping"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_image"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/txt_name_product_shopping"
+            android:textColor="@color/black"
+            app:layout_constraintStart_toEndOf="@+id/img_Item_Product_Shopping"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txt_Item_Name_Product_Shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="3dp"
+            android:text="@string/txt_default_name_general"
+            android:textSize="16sp"
+            app:layout_constraintStart_toEndOf="@+id/img_Item_Product_Shopping"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/img_Item_Product_Shopping"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Item_Name_Product_Shopping"
+            tools:ignore="RtlHardcoded">
+
+            <ImageView
+                android:id="@+id/img_Item_Add_Product_Shopping"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_add" />
+
+            <TextView
+                android:id="@+id/txt_Item_Counter_Product_Shopping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:text="@string/txt_product_count_product_detail"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img_Item_Remove_Product_Shopping"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/ic_remove" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txt_Item_Price_Product_Shopping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/txt_price_general"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/img_Item_Delete_Product_Shopping"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Item_Name_Product_Shopping" />
+
+        <ImageView
+            android:id="@+id/img_Item_Delete_Product_Shopping"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:src="@drawable/ic_delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/txt_Item_Price_Product_Shopping"
+            app:layout_constraintStart_toStartOf="@+id/txt_Item_Price_Product_Shopping"
+            app:layout_constraintTop_toBottomOf="@+id/txt_Item_Price_Product_Shopping" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

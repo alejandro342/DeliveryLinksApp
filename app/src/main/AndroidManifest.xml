@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.alejandro.deliverylinks">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" /> <!-- permisos para trabajar con la localización -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DeliveryLinks"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".modules.client.ui.views.payments.paypal.form.ClientPaymentPayPalActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.client.ui.views.payments.payment_method.ClientPaymentMethodActivity"
+            android:exported="false"
+            android:parentActivityName=".modules.client.ui.views.address.ClientAddressListActivity" />
+        <activity
+            android:name=".modules.client.ui.views.payments.mercado_pago.view.status.ClientPaymentsStatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.client.ui.views.payments.mercado_pago.view.ClientPaymentsInstallmentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.client.ui.views.orders.ClientOrdersDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.client.ui.views.map.ClientOrdersMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.delivery.ui.views.orders.map.DeliveryOrdersMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.delivery.ui.views.orders.DeliveryOrdersDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".modules.delivery.ui.views.DeliveryHomeActivityView" />
+        <activity
+            android:name=".modules.client.ui.views.orders.RestaurantOrdersDetailActivity"
+            android:exported="false"
+            android:parentActivityName=".modules.restaurant.ui.view.RestaurantHomeActivityView" />
+        <activity
+            android:name=".modules.client.ui.views.payments.mercado_pago.view.form.ClientPaymentsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.client.ui.views.address.map.ClientAddressMapActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.client.ui.views.address.ClientAddressCreateActivity"
+            android:exported="false"
+            android:parentActivityName=".modules.client.ui.views.address.ClientAddressListActivity" />
+        <activity
+            android:name=".modules.client.ui.views.address.ClientAddressListActivity"
+            android:exported="false"
+            android:parentActivityName=".modules.client.ui.views.client.ClientShoppingBagActivity" />
+        <activity
+            android:name=".modules.client.ui.views.client.ClientShoppingBagActivity"
+            android:exported="false"
+            android:parentActivityName=".modules.client.ui.views.client.ClientHomeActivity" />
+        <activity
+            android:name=".modules.client.ui.views.client.ClientProductsDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.client.ui.views.client.ClientProductsListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.login.ui.views.LoginUserView"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".modules.registeruser.ui.views.RegisterUserView"
+            android:exported="false" />
+        <activity
+            android:name=".modules.selectroles.view.ui.SelectRolesActivityView"
+            android:exported="false" />
+        <activity
+            android:name=".modules.client.ui.views.client.ClientHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".modules.restaurant.ui.view.RestaurantHomeActivityView"
+            android:exported="false" />
+        <activity
+            android:name=".modules.delivery.ui.views.DeliveryHomeActivityView"
+            android:exported="false" />
+        <activity
+            android:name=".modules.client.ui.views.client.ClientUpdateActivity"
+            android:exported="true"
+            android:parentActivityName=".modules.client.ui.views.client.ClientHomeActivity" />
+        <activity
+            android:name=".modules.selectimage.ui.view.SelectImageActivityView"
+            android:exported="true" /> <!-- implementacion de google maps -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="Aqui-key-para-el-uso-de-notificaciones" /> <!-- implementacion de notificaciones push -->
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service
+            android:name=".services.FirebaseMessagingClient"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+    </application>
+
+</manifest>

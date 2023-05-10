@@ -1,0 +1,101 @@
+plugins {
+    id 'com.android.application'
+    id 'org.jetbrains.kotlin.android'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdk 32
+
+    defaultConfig {
+        applicationId "com.alejandro.deliverylinks"
+        minSdk 23
+        targetSdk 32
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+
+    android {
+        buildFeatures {
+            viewBinding = true
+        }
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.core:core-ktx:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.4'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.0'
+
+    //Material Desing
+    implementation 'com.google.android.material:material:1.7.0'
+
+    //Retrofit
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    //Gson
+    implementation 'com.google.code.gson:gson:2.8.9'
+    implementation 'com.squareup.retrofit2:converter-gson:2.9.0'
+
+    //Picasso
+    implementation 'com.squareup.picasso:picasso:2.71828'
+
+    //Circle imageview
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+
+    //Imagepicker
+    implementation 'com.github.dhaval2404:imagepicker:2.1'
+
+    //progressbar SpinKit
+    implementation 'com.github.ybq:Android-SpinKit:1.4.0'
+
+    //slider image
+    implementation 'com.github.denzcoskun:ImageSlideshow:0.1.0'
+
+    //dependencias de google maps
+    implementation 'com.google.maps.android:maps-ktx:3.2.0'
+    implementation 'com.google.maps.android:maps-utils-ktx:3.2.0'
+    implementation 'com.google.android.gms:play-services-maps:18.1.0'
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.maps.android:android-maps-utils:2.2.3'
+
+    //viewPager2
+    implementation 'androidx.viewpager2:viewpager2:1.0.0'
+    //malikdawar para trazado de rutas
+    implementation 'com.github.malikdawar:drawroute:1.5'
+
+    //carouselrecyclerview
+    implementation 'com.github.sparrow007:carouselrecyclerview:1.2.6'
+
+    //implementar sockets
+    implementation 'com.github.nkzawa:socket.io-client:0.6.0'
+    implementation 'io.card:android-sdk:5.5.1'
+    implementation 'com.github.sharish:CreditCardView:v1.0.4'
+    implementation 'io.stormotion:creditcardflow:1.0.0'
+
+    implementation platform('com.google.firebase:firebase-bom:31.2.2')
+    implementation 'com.google.firebase:firebase-messaging-ktx'
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+
+}
+apply plugin:'com.google.gms.google-services'
